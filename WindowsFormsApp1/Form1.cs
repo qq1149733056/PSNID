@@ -60,7 +60,7 @@ namespace WindowsFormsApp1
                     Console.WriteLine(path);
                  
                     tag = 0;
-                    device.Text = "设备:" + drive.VolumeLabel;
+                    device.Text = "Drive:" + drive.VolumeLabel;
                     groupBox1.Visible = true;
                     groupBox2.Visible = false;
                    
@@ -292,6 +292,8 @@ namespace WindowsFormsApp1
                 openWith.Add("grant_type", "authorization_code");
                 openWith.Add("code", code);
                 openWith.Add("redirect_uri", "https://remoteplay.dl.playstation.net/remoteplay/redirect");
+
+               
                 try
                 {
                     Post(address, openWith);
@@ -553,6 +555,11 @@ namespace WindowsFormsApp1
         }
 
         private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }

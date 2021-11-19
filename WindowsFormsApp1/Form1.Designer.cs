@@ -84,9 +84,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 354);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 17);
+            this.label1.Size = new System.Drawing.Size(117, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "WIFI account 2.4G";
+            this.label1.Text = "WIFI 2.4G account ";
             // 
             // wifiname
             // 
@@ -101,9 +101,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 393);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 17);
+            this.label2.Size = new System.Drawing.Size(129, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "WIFI password 2.4G";
+            this.label2.Text = "WIFI 2.4G password ";
             // 
             // wifipwd
             // 
@@ -306,7 +306,7 @@
             this.label14.Size = new System.Drawing.Size(551, 35);
             this.label14.TabIndex = 23;
             this.label14.Text = "Input the same PSN account and password you used to log into PS5, After loginning" +
-    " successfully, copy and paste the \"Full URL\" in the bottom. CTRL+V";
+    " successfully, copy and paste (CTRL+V) the \"Full URL\" in the bottom. ";
             // 
             // label15
             // 

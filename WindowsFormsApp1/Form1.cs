@@ -151,7 +151,7 @@ namespace WindowsFormsApp1
                                     path = drive.Name;
                                    
                                     tag = 0;
-                                    device.Text = "设备:" + drive.VolumeLabel;
+                                    device.Text =  drive.VolumeLabel;
                                     groupBox1.Visible = true;
                                     groupBox2.Visible = false;
                                     break;
@@ -215,7 +215,7 @@ namespace WindowsFormsApp1
         {
             if (tag == 1)
             {
-                MessageBox.Show("设备还没有连接");
+                MessageBox.Show("none");
             }
             else {
                
@@ -246,7 +246,7 @@ namespace WindowsFormsApp1
                 // File.WriteAllText(path + "wifi.json", wifioutput);
                 // File.WriteAllText(path + "rp.json", rpoutput);
 
-                 MessageBox.Show("保存成功，请手柄按HOME键连接PS4/5主机");
+                 MessageBox.Show("Saved successfully");
             }
 
 
@@ -300,12 +300,12 @@ namespace WindowsFormsApp1
                 }
                 catch
                 {
-                    MessageBox.Show("网络错误,或者PSN服务器无法连接,或者url有误");
+                    MessageBox.Show("network error");
                 }
 
             }
             else {
-                MessageBox.Show("没有正确的url");
+                MessageBox.Show("No url");
             }
             
 
@@ -370,7 +370,7 @@ namespace WindowsFormsApp1
             string str = Convert.ToString(long.Parse(id), 16);
             string strd = Convert.ToBase64String(strSToToHexByte(str));
             psnidname.Text = strd;
-            MessageBox.Show("成功获取");
+            MessageBox.Show("OK");
 
         }
         private static byte[] strToToHexByte(string hexString)
@@ -442,7 +442,7 @@ namespace WindowsFormsApp1
             
             File.Copy(fileFolder + "/firmware.bin", path + "/firmware.bin", true);
             _syncContext.Post(SetLabelText, "100");
-            MessageBox.Show("更新完毕");
+            MessageBox.Show("OK");
             
            
         }

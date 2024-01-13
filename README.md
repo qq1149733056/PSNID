@@ -1,2 +1,2 @@
-# p-s-ni-d
-red
+# PSNID
+获取PSID写入U盘
